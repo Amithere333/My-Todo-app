@@ -1,0 +1,171 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(146, 196, 196);
+}
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+
+
+.container{
+    width:60%;
+    max-width: 600px;
+    min-height: 400px;
+    background-color: teal;
+    margin:40px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    border-radius: 5px;
+    padding:1.5rem;
+}
+
+/* add button icon*/
+
+#add-image{
+    width:60px;
+    height:60px;
+    margin-bottom:0;
+    cursor:pointer;
+
+
+}
+
+
+h1{
+    text-align: center;
+    color:white;
+    margin-bottom:1rem;
+}
+
+/* input and add button container*/
+.input-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+/* input field */
+#task-input{
+    
+    width:100%;
+    max-width: 400px;
+    height: 30px;
+    padding:5px;
+    border-radius:5px;
+    font-size:1rem;
+    background-color: rgb(228, 216, 216);
+}
+
+
+
+/* on focus ,input field  */
+#task-input:focus{
+    background-color: white;
+}
+
+#list-items{
+    list-style-type:none;
+    color:rgb(255, 255, 255);
+    width:80%;
+
+   
+}
+
+/* task styling */
+#list-items li{
+    border:1px solid rgb(240, 241, 239);
+    padding:8px;
+    margin-top:3px;
+    border-radius: 4px;
+    background-color:white;
+    color:black;
+    margin-top:10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 100%;
+    max-width: 100%;
+
+    
+}
+
+
+
+
+/* complete and delete button styling */
+
+.complete-btn,.delete-btn{
+    background-color: white;
+    margin-right:10px;
+    border:none;
+    width: 20px;
+    border-radius: 10px;
+    
+    
+}
+
+
+
+/* hover on added task button delete and complete */
+
+.complete-btn:hover,.delete-btn:hover{
+    border:1px solid yellow;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px 4px rgb(45, 153, 81);
+    
+}
+
+
+
+
+/* Media queries for  responsive design */
+
+
+
+/* for mobile devices */
+@media screen and (max-width:600px) {
+    .container{
+        width:90%;
+        padding:1rem;
+    }
+    
+    #task-input{
+        width:70%;
+        font-size: 0.85rem;
+        height: 22px;
+
+    }
+
+    #add-image{
+        width:48px;
+        height:48px;
+    }
+
+    #list-items li{
+        font-size: 0.8rem;
+    }
+}
+
+
+/* media query for tablet/laptop  */
+
+@media screen and (min-width:600px) and (max-width:1024px){
+    .container{
+        width:80%;
+    }
+
+    #task-input{
+       margin-left:50px;
+       width:75%;
+    }
+
+
+}
