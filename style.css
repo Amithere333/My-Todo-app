@@ -81,7 +81,6 @@ h1{
 #list-items li{
     border:1px solid rgb(240, 241, 239);
     padding:8px;
-    margin-top:3px;
     border-radius: 4px;
     background-color:white;
     color:black;
@@ -91,8 +90,9 @@ h1{
     flex-wrap: wrap;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    width: 100%;
-    max-width: 100%;
+    width: 95%;
+    
+    
 
     
 }
@@ -163,7 +163,6 @@ h1{
     }
 
     #task-input{
-       margin-left:50px;
        width:75%;
     }
 
